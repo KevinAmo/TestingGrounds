@@ -28,8 +28,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	/** Fires a projectile. */
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	void OnFire();
-public:
 
 	/** Projectile class to spawn */
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
